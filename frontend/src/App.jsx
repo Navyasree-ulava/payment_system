@@ -9,6 +9,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { SendMoney } from "./pages/SendMoney";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { TransferResult } from "./pages/TransferResult";
+import { Profile } from "./pages/Profile";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/send" element={<ProtectedRoute><SendMoney /></ProtectedRoute>} />
           <Route path="/transfer-result" element={<TransferResult />} />
+          <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
         </Routes>
       </BrowserRouter>
     </>

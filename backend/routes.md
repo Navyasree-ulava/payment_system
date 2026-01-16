@@ -43,6 +43,12 @@ Prefix: `/api/v1/user`
   ```
 - **Authentication**: None
 
+### Get Current User
+- **URL**: `/me`
+- **Method**: `GET`
+- **Description**: Returns the authenticated user's information (username, first name, last name).
+- **Authentication**: Required (JWT Token in `Authorization` header)
+
 ### Update User Info
 - **URL**: `/update`
 - **Method**: `PUT`
